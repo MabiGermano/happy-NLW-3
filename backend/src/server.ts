@@ -1,6 +1,7 @@
 import express from 'express';
 
 const app = express();
+app.use(express.json())
 
 // Rotas 
 // Rescursos: User nesse caso
@@ -12,6 +13,7 @@ const app = express();
 app.get('/users:id', (request, response) => {
     console.log(request.query)
     console.log(request.params)
+    console.log(request.body)
     return response.json({message: "Hello world"});
 })
 
