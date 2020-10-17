@@ -9,7 +9,7 @@ const app = express();
 // Route param: http://localhost:3333/users/3 (identificador do recurso)
 // Body
 
-app.get('/users', (request, response) => {
+app.get('/users:id', (request, response) => {
     console.log(request.query)
     console.log(request.params)
     return response.json({message: "Hello world"});
