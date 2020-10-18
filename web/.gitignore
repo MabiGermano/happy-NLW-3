@@ -22,3 +22,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# backend
+
+/backend/uploads
+/backend/node_modules
+
+
+# web
+
+/web/node_modules
